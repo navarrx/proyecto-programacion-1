@@ -87,6 +87,7 @@ nav ul li a {
 nav ul li a:hover {
     /* Animate underline the text*/
     
+    text-decoration: underline;
     background: #f6f4ff;
     color: black;
 }
