@@ -1,7 +1,7 @@
 h3 {
-    font-family: Tahoma, sans-serif;
+   font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     margin: 0;
     padding-top: 10px;
  }
@@ -17,7 +17,7 @@ h3 {
     margin: 40px 0;
  }
  .content {
-    width: 15%;
+    width: 13%;
     margin: 15px;
     box-sizing: border-box;
     float: left;
@@ -30,7 +30,7 @@ h3 {
     background: #fff;
  }
  .content:hover{
-    box-shadow: 0 3px 6px rgb(187, 25, 25), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.473), 0 3px 6px rgba(0,0,0,0.23);
     transition: translate(0px, -8px);
  }
  .categoryimg {
@@ -76,11 +76,11 @@ button {
     font-size: 24px;
     color: #fff;
     width: 100%;
-    padding: 15px;
+    padding: 12px;
     border: 0;
     outline: none;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: -10px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -90,10 +90,10 @@ button {
   }
   
   .buy-1 span {
-    padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 14px;
-    padding-right: 15px;
+   font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding-right: 10px;
     text-transform: uppercase;
   }
   
@@ -113,7 +113,7 @@ button {
   .hover-underline-animation {
     position: relative;
     color: black;
-    padding-bottom: 20px;
+    padding-bottom: 2px;
   }
   
   .hover-underline-animation:after {

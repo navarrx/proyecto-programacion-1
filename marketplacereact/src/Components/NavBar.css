@@ -14,7 +14,7 @@ img {
     height: 100%;
 }
 header {
-    width: 80%;
+    width: 90%;
     height: 75px;
     background: #131927;
     display: flex;
@@ -74,7 +74,7 @@ nav ul {
 nav ul li a {
     color: white;
     display: block;
-    margin: 0 2px;
+    margin: -2px;
     font-weight: 600;
     padding: 8px 18px;
     transition: 0.2s;
