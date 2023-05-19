@@ -1,0 +1,145 @@
+h3 {
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 10px;
+ }
+ a {
+    text-decoration: none;
+ }
+ .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+ }
+ .content {
+    width: 15%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.649), 0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background: #fff;
+ }
+ .content:hover{
+    box-shadow: 0 3px 6px rgb(187, 25, 25), 0 3px 6px rgba(0,0,0,0.23);
+    transition: translate(0px, -8px);
+ }
+ .categoryimg {
+    width: 150px;
+    height: 170px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+ }
+ p {
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+ }
+ /* h6 {
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+ } */
+ /*Identado porque es el precio si se coloca */
+ ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+ }
+ li {
+    padding: 5px;
+ }
+.fa {
+    font-size: 26px;
+    transition: .4s;
+
+}
+.fa:hover{
+    transform: scale(1.3);
+    transition: .6s;
+}
+button {
+    text-align:center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.buy-1 {
+    border: none;
+    background: none;
+  }
+  
+  .buy-1 span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .buy-1 svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .buy-1:hover svg {
+    transform: translateX(0);
+  }
+  
+  .buy-1:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .buy-1:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+@media(max-width: 1000px) {
+    .content {
+        width: 45%;
+    }
+}
+@media(max-width: 750px) {
+    .content {
+        width: 40%;
+    }
+}
