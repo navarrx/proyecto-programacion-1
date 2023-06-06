@@ -5,14 +5,18 @@ import { Footer } from './Components/Footer'
 import { Login } from './Components/Login'
 import { Carousel } from './Components/Carousel'
 import { Alert } from './Components/Alert.js'
-import { BrowserRouter, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 export const App = () => {
   return (
+    // login route//
     <BrowserRouter>
     <div>
       <NavBar />
-      <Routes path="/login" component={Login} />
+        <Switch>
+          <Route exact path="/login" component={Login} />
+        </Switch>
+      
       <div className='row'>
         <div className='col-md-12'>
           <Cards 
