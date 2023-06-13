@@ -8,9 +8,15 @@ export const Login = () => {
         email: '',
         password: ''
     }
-
-    const handleForm = (values) => {
-        console.log("values:", values)
+    
+    const handleForm = async(values) => { 
+        console.log('values:', values) 
+    try { 
+          const response = await axios.post('http://localhost:5000/login', values) 
+          console.log(response.data) 
+    } catch (error) { 
+          console.log(error) 
+        } 
     }
 
   return (
