@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import "./Login.css"
 import { Field, Formik, Form } from 'formik'
 export const Login = () => {
@@ -12,7 +13,7 @@ export const Login = () => {
     const handleForm = async(values) => { 
         console.log('values:', values) 
     try { 
-          const response = await axios.post('http://localhost:5000/login', values) 
+          const response = await axios.post('http://127.0.0.1:5000/example/login', values) 
           console.log(response.data) 
     } catch (error) { 
           console.log(error) 
@@ -28,7 +29,7 @@ export const Login = () => {
         >
             <Form>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <form className="form">
+                <div className="form">
                     <p className="form-title">Sign in to your account</p>
                     <div className="input-container">
                     <Field 
@@ -63,7 +64,7 @@ export const Login = () => {
                         No account?
                         <a href="singup.html">Sign up</a>
                     </p>
-                </form>
+                </div>
                 </div>
 
             </Form>
